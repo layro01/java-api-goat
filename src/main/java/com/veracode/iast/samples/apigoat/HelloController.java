@@ -15,7 +15,7 @@ public class HelloController {
     }
 
     @RequestMapping("/hello")
-	String test(@RequestParam(value="name", defaultValue="Noname") String param) {
+	String test(@RequestParam(value="name", defaultValue="undefined") String param) {
 		return String.format(template, param);
 	}
 }
